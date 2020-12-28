@@ -1,4 +1,15 @@
+# renvx 0.0.0.9002
+
+Options
+
+- Added `set_options()`
+- Added unit test `test-options.R`
+
+--------------------------------------------------------------------------------
+
 # renvx 0.0.0.9001
+
+Dependencies and default value
 
 - Added package dependencies `{jsonlite}`, `{magrittr}` and `{stringr}`
 - Added default value for arg `renv_lock` in
