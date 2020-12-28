@@ -4,7 +4,7 @@
 \alias{extract_packages_for_renv_install}
 \title{Extract vector of packages from renv lockfile for \link[renv:install]{renv::install}}
 \usage{
-extract_packages_for_renv_install(renv_lock)
+extract_packages_for_renv_install(renv_lock = "renv.lock")
 }
 \arguments{
 \item{renv_lock}{[\link{character}] Path to renv.lock.}

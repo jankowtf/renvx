@@ -1,3 +1,11 @@
+# renvx 0.0.0.9001
+
+- Added package dependencies `{jsonlite}`, `{magrittr}` and `{stringr}`
+- Added default value for arg `renv_lock` in
+`extract_packages_for_renv_install()`
+
+--------------------------------------------------------------------------------
+
 # renvx 0.0.0.9000
 
 Initial commit

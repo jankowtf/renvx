@@ -28,9 +28,11 @@ extract_packages <- function(renv_lock) {
 #'
 #' @keywords internal
 #'
+#' @importFrom jsonlite fromJSON
+#' @importFrom magrittr %>%
+#' @importFrom stringr str_c
 #' @export
-#'
-extract_packages_for_renv_install <- function(renv_lock) {
+extract_packages_for_renv_install <- function(renv_lock = "renv.lock") {
   if (!file.exists(renv_lock)) {
     stop("Could not find renv lockfile: ", renv_lock)
   }
