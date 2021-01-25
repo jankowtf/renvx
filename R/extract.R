@@ -12,6 +12,10 @@ extract_packages <- function(renv_lock) {
   if (!file.exists(renv_lock)) {
     stop("Could not find renv lockfile: ", renv_lock)
   }
+  if (fs::file_info(renv_lock)$size == 0) {
+    stop("renv lockfile is empty: ", renv_lock)
+  }
+
   renv_packages <- jsonlite::fromJSON(renv_lock)$Packages
   packages <- lapply(renv_packages, function(x) {
     x$Package

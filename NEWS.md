@@ -1,3 +1,12 @@
+# renvx 0.0.0.9003
+
+Minor changes in unit tests
+
+- Added test fixture for `renv.lock`
+- Trying to understand the behavior of `options()` (see https://stackoverflow.com/questions/65880511/call-to-options-has-different-side-effects-dependening-on-how-it-is-called)
+
+--------------------------------------------------------------------------------
+
 # renvx 0.0.0.9002
 
 Options
